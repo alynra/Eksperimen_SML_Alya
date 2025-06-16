@@ -25,7 +25,7 @@ def preprocess_data(df):
     return df_encoded
 
 def main():
-    df = pd.read_csv("data/personality_raw.csv")
+    df = pd.read_csv("personality_raw.csv")
     df_processed = preprocess_data(df)
     df_processed.to_csv("preprocessing/personality_preprocessing.csv", index=False)
     print("Preprocessing selesai dan disimpan.")
